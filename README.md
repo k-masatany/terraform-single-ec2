@@ -7,12 +7,20 @@ $ ssh-keygen -t rsa -b 4096 -C '' -N '' -f terraform-sample-01
 ```
 
 ```
+$ vi main.tf
+```
+
+```
+$ terraform init
+```
+
+```
 $ vi variables.tf
 ```
 
 ```
-$ terraform workspace create production
-$ terraform workspace create staging
+$ terraform workspace new production
+$ terraform workspace new staging
 ```
 
 ```
